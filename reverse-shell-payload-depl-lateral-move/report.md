@@ -1,6 +1,9 @@
 
 # Incident Report: Reverse Shell, Payload Deployment, and Lateral Movement via WMI
 
+## Setup Diagram
+![Diagram.](/screenshots/LabSetup.png "Diagram")
+
 ## Executive Summary
 On April 8, 2025, suspicious activity was detected across `sql01.electric.com` and `dc01.electric.com`. The attacker exploited a vulnerable PHP script to gain initial access, established a reverse shell using Netcat, downloaded and staged malicious payloads (`Sync.exe` and `apphelper.exe`) via `certutil.exe`, and attempted persistence through service hijacking. The attacker then pivoted laterally to the domain controller (`dc01`) using WMI with Administrator credentials, successfully executing `apphelper.exe`. Attempts to run the malware as a service (`lpfols`) failed, but the chain demonstrates a full intrusion lifecycle: initial access, execution, persistence, and lateral movement.
 
