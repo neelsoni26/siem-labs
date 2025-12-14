@@ -4,7 +4,7 @@
 On April 16, 2025, an attacker originating from IP **192.168.52.89** conducted reconnaissance and exploitation activities targeting the corporate network. The attack began with external scanning of the proxy server (**proxy02**) and progressed to credential-based access on multiple internal systems, culminating in a password spraying attempt against domain accounts. The intrusion leveraged SSH connections, PowerShell scripts, and reconnaissance of sensitive telecom interception services, indicating a high-value target compromise attempt.  
 
 ### Network Diagram
-![diagram](/Network_Diagram.png)
+![diagram](./Network_Diagram.png)
 
 ## Investigation  
 - **Detection Source**: Elastic Security SIEM, Snort03 IDS, Syslog from appsrv02  
