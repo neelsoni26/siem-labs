@@ -60,7 +60,9 @@ event.category : "authentication" and event.outcome : "success" and source.ip : 
 At **09:56:08.264 UTC**, a successful authentication event was recorded. The threat actor successfully guessed the password for user account **`Peter`** from source domain **`attacker03`**, obtaining initial access to the internal network environment.
 
 *Figure 2: Successful authentication event confirming initial access for user 'Peter' at 09:56:08 UTC.*
+
 ![Figure 2](screenshots/image2.png)
+
 ---
 
 ### Phase 3: Post-Compromise Activity & Elevation Context on appsvr02
@@ -70,7 +72,9 @@ To trace post-exploitation activity, the investigation window was advanced to **
 At **10:07:06.291 UTC** and **10:07:06.369 UTC**, four distinct `logged-in` security events were recorded on **`appsvr02`**. Detailed log messages indicated elevated privilege processing under `Security ID: S-1-0-0`, confirming that the attacker was actively establishing persistent interactive sessions and executing elevated commands on the host.
 
 *Figure 3: System security events on appsvr02 documenting successful interactive logons and privilege context initialization.*
+
 ![Figure 3](screenshots/image3.png)
+
 ---
 
 ### Phase 4: Lateral Movement to Administrator on appsvr03
@@ -87,7 +91,9 @@ At **10:19:02 UTC**, four simultaneous `logged-in` events were registered on a d
 This sequence confirms that after solidifying control over `appsvr02`, the adversary moved laterally across the network and compromised the primary administrative account on `appsvr03`, granting them full domain/system control over the server.
 
 *Figure 4: Telemetry confirming successful lateral movement resulting in four concurrent Administrator sessions on appsvr03.*
+
 ![Figure 4](screenshots/image4.png)
+
 ---
 
 ## Threat Mapping (MITRE ATT&CK)
