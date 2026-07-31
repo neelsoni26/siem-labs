@@ -7,6 +7,6 @@ A curated portfolio of complete incident reports from hands‑on SIEM labs.
 Each lab lives in its own folder and contains everything an analyst would need to reproduce, understand, and improve the detection workflow:
 - Scenario description
 - KQL/EQL queries used for detection
-- Detection logic & thresholds (ready‑to‑import rule definitions)
+- Detection logic & thresholds 
 - Findings, MITRE ATT&CK mapping, and remediation recommendations
 - Supplemental artefacts (screenshots, dashboards, notes)
